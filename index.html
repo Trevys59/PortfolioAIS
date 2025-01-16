@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfolio, AIS">
+    <title>Portfolio - [Prenom Nom]</title><!-- à Changer -->
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- En-tête de la page -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">Mon Portfolio</a> <!-- À MODIFIER : Changez le texte si besoin -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--Contenu principal-->
+<main>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Section A propos de moi ------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section id="about" class="container mt-5">
+    <h2>À propos de moi</h2>
+    <!-- Photo de profil -->
+    <img src="./assets/images/portrait.jpg" alt="Photo de [Prenom Nom]"  
+         class="img-fluid rounded-circle mx-auto d-block" 
+         style="width: 150px; height: 150px; object-fit: cover;"><!-- à Changer la photo au format jpg --> 
+    
+    <!-- Pitch personnel à modifier -->
+    <p>[Phrase d'accroche]</p>
+    <p style="font-style: italic; margin-top: 20px;"><!-- à Changer parragraphe à propos de vous-->
+      [paragraphe à propos de vous]
+    </p>
+    
+    <!-- Centres d'intérêt -->
+    <div class="row mt-4 text-center">
+
+        <div class="col-md-4">
+            <span class="material-symbols-outlined">security</span><!-- à Changer le nom et l'icone : https://fonts.google.com/icons -->
+            <p>Hobbie1</p>
+        </div>
+        <!-- Répétez pour d'autres hobbies -->
+    
+    </div>
+
+    <!-- Boutons CV et liens -->
+    <a href="./assets/images/CV.pdf" class="btn btn-primary mt-3" download><!-- A MODIFIER : mettre votre CV -->
+        Télécharger CV
+    </a>
+    <div class="mt-2">
+        <a href="https://github.com/">GitHub</a> | <!-- À MODIFIER -->
+        <a href="https://www.linkedin.com/">LinkedIn</a> <!-- À MODIFIER -->
+    </div>
+    
+
+
+  <!-- Parcours scolaire -->
+    <aside class="mt-5">
+        <h3>Parcours scolaire</h3>
+        <div class="card mb-4">
+          <div class="card-body">
+              <h5 class="card-title">Simplon</h5>
+              <p class="card-text">
+                  <strong>AIS</strong> (Administrateur d'Infrastructures Sécurisées) <br>
+                  <em>2024 - 2025 <i>(en cours)</i></em><br>
+                  Administration et sécurisation des infrastructures, Conception et mise en œuvre de solutions, Gestion de la cybersécurité.
+              </p>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">[Etablissement]</h5>
+                <p class="card-text">
+                    <strong>[Nom de la formation]</strong> [description du nom] <br>
+                    <em>[année de début - année de fin]</em><br>
+                    [Description de la formation]
+                </p>
+            </div>
+        </div>
+        <!-- Répétez pour d'autres parcours scolaire -->
+        
+    </aside>
+
+    <!-- Expériences professionelles -->
+    <aside class="mt-5">
+        <h3>Expériences professionelles</h3>
+
+        <div class="card mb-4">
+          <div class="card-body">
+              <h5 class="card-title">[Nom de l'entreprise]</h5>
+              <p class="card-text">
+                  <strong>[Poste]</strong> <br>
+                  <em>[année de début - année de fin]</em><br>
+                  [Description du poste]
+              </p>
+          </div>
+        </div>
+        <!-- Répétez pour d'autres expériences professionnelles -->
+
+    </aside>
+  </section>
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Section Compétences ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section id="skills" class="container mt-5">
+    <h2 class="text-center mb-4">Compétences</h2>
+    <div class="row text-center">
+
+        <!-- Administration des systèmes -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">storage</span>
+                    <h5 class="card-title mt-3">Administration des systèmes</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Systèmes d'exploitation</strong> : Administration de Windows Server et Linux (Ubuntu, Debian).</li>
+                        <li><strong>Gestion des serveurs</strong> : Configuration et maintenance de serveurs DNS, DHCP, FTP.</li>
+                        <li><strong>Gestion des utilisateurs</strong> : Administration des comptes utilisateurs et des permissions.</li>
+                        <li><strong>Mise à jour et correctifs logiciels</strong> : Gestion proactive des correctifs pour sécuriser les systèmes. <i>(en cours)</i></li>
+                        <li><strong>Supervision des systèmes</strong> : Surveillance avancée avec des outils comme SIEM. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestion des réseaux -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">lan</span>
+                    <h5 class="card-title mt-3">Gestion des réseaux</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Configuration réseau</strong> : Mise en place et maintenance de réseaux locaux (LAN) et étendus (WAN).</li>
+                        <li><strong>Administration des équipements</strong> : Gestion de routeurs et switches (Cisco).</li>
+                        <li><strong>Protocoles réseaux</strong> : Maîtrise de TCP/IP, DNS, DHCP, HTTP/S.</li>
+                        <li><strong>Sécurisation des réseaux</strong> : Implémentation de VPN, VLAN et pare-feu.</li>
+                        <li><strong>Diagnostic réseau</strong> : Utilisation d'outils comme Wireshark pour le dépannage.</li>
+                        <li><strong>Architecture réseau avancée</strong> : Conception de réseaux haute disponibilité. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sécurité informatique -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">shield_lock</span>
+                    <h5 class="card-title mt-3">Sécurité informatique</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Analyse des vulnérabilités</strong> : Réalisation de tests de pénétration avec Metasploit et Nessus. <i>(en cours)</i></li>
+                        <li><strong>Mise en place de pare-feu</strong> : Configuration de pare-feu et de systèmes IDS/IPS (ex. Snort). <i>(en cours)</i></li>
+                        <li><strong>Gestion des accès</strong> : Implémentation avancée de contrôles d’accès (MFA, LDAP). <i>(en cours)</i></li>
+                        <li><strong>Sécurisation des données</strong> : Chiffrement des données sensibles et gestion des sauvegardes.</li>
+                        <li><strong>Réponse aux incidents</strong> : Gestion et remédiation des incidents de sécurité. <i>(en cours)</i></li>
+                        <li><strong>Conformité</strong> : Mise en place de politiques conformes aux normes ISO 27001. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Virtualisation et Cloud -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">cloud</span>
+                    <h5 class="card-title mt-3">Virtualisation et Cloud</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Hyperviseurs</strong> : Expérience avec VMware Workstation et Hyper-V.</li>
+                        <li><strong>Services cloud</strong> : Connaissance de base d’AWS et Azure. <i>(en cours)</i></li>
+                        <li><strong>Conteneurisation</strong> : Utilisation de Docker pour le déploiement d'applications.</li>
+                        <li><strong>Infrastructure as Code</strong> : Familiarité avec Terraform. <i>(en cours)</i></li>
+                        <li><strong>Sécurisation des environnements cloud</strong> : Gestion des IAM et stratégies d'accès dans AWS ou Azure. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supervision et Maintenance -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">build</span>
+                    <h5 class="card-title mt-3">Supervision et Maintenance</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Outils de monitoring</strong> : Mise en œuvre de solutions comme Nagios pour la surveillance des systèmes. <i>(en cours)</i></li>
+                        <li><strong>Gestion des performances</strong> : Surveillance proactive des performances système et réseau.</li>
+                        <li><strong>Plan de reprise après sinistre</strong> : Élaboration de stratégies de continuité. <i>(en cours)</i></li>
+                        <li><strong>Documentation avancée</strong> : Rédaction de manuels techniques et rapports d’audit conformes. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Développement et automatisation -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body">
+                    <span class="material-symbols-outlined">code</span>
+                    <h5 class="card-title mt-3">Développement et automatisation</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Langages de programmation</strong> : Maîtrise de Bash et de Shell.</li>
+                        <li><strong>Scripts d'automatisation</strong> : Développement de scripts pour automatiser des tâches.</li>
+                        <li><strong>Gestion de configuration</strong> : Utilisation d’Ansible ou Puppet pour la configuration avancée. <i>(en cours)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compétences transversales -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+              <div class="card-body">
+                  <span class="material-symbols-outlined">chat</span>
+                  <h5 class="card-title mt-3">Compétences transversales</h5>
+                  <ul class="list-unstyled">
+                      <li><strong>Gestion de projets</strong> : Planification et exécution de projets techniques.</li>
+                      <li><strong>Travail en équipe</strong> : Collaboration avec des équipes multidisciplinaires.</li>
+                      <li><strong>Communication</strong> : Vulgarisation de concepts techniques pour différents publics.</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <!-- Répétez pour d'autres competences -->
+
+    </div>
+  </section>
+  
+  
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Section Projets --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section id="projects" class="container mt-5">
+    <h2 class="text-center mb-4">Projets</h2>
+    <div class="row">
+        <!-- Projet 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+                <img src="./assets/images/Projet_1.png" class="card-img-top" alt="projet 1">
+                <div class="card-body">
+                    <h5 class="card-title">[Nom du projet]</h5>
+                    <p class="card-text">[Description du projet]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+                <img src="./assets/images/Projet_2.png" class="card-img-top" alt="projet 2">
+                <div class="card-body">
+                    <h5 class="card-title">[Nom du projet]</h5>
+                    <p class="card-text">[Description du projet]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+                <img src="./assets/images/Projet_3.png" class="card-img-top" alt="projet 3">
+                <div class="card-body">
+                    <h5 class="card-title">[Nom du projet]</h5>
+                    <p class="card-text">[Description du projet]</p>
+                </div>
+            </div>
+        </div>
+        <!-- Répétez pour d'autres projets -->
+
+    </div>
+  </section>
+
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Section Contact ------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section id="contact" class="container mt-5">
+    <h2 class="text-center pb-5 mb-4">Contact</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <a href="tel:0000000000"> <!-- À MODIFIER : Ajoutez votre numéro -->
+          <span class="material-symbols-outlined">call</span>
+          <p>+33 0 00 00 00 00</p>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="mailto:votre.email@example.com"> <!-- À MODIFIER : Ajoutez votre email -->
+          <span class="material-symbols-outlined">mail</span>
+          <p>votre.email@example.com</p>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="https://www.linkedin.com/"> <!-- À MODIFIER : Ajoutez votre LinkedIn -->
+          <span class="material-symbols-outlined">person</span>
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- Pied de page -->
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <div>© 2025 - Tous droits réservés.</div> <!-- À MODIFIER -->
+        <div class="mt-2">
+          <a href="./assets/images/CV.pdf" download>Télécharger CV</a> | <!-- À MODIFIER -->
+          <a href="https://github.com/">GitHub</a> | <!-- À MODIFIER -->
+          <a href="https://www.linkedin.com/">LinkedIn</a> <!-- À MODIFIER -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
